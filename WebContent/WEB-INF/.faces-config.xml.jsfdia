@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#private#usuario#usuarioEdit.xhtml"
+  PATH="/pages/private/usuario/usuarioEdit.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#private#usuario#usuarioEdit.xhtml:0"
+   NAME="item" PATH="/pages/private/usuario/usuarioEdit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#pages#private#usuario#usuarioList.xhtml" NAME="output"
+    PATH="/pages/private/usuario/usuarioList.xhtml"
+    TARGET="rules:#pages#private#usuario#usuarioList.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#private#usuario#usuarioList.xhtml"
+  PATH="/pages/private/usuario/usuarioList.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM
+  NAME="rules:#pages#private#meiocomunicacao#meiocomunicacaoEdit.xhtml"
+  PATH="/pages/private/meiocomunicacao/meiocomunicacaoEdit.xhtml"
+  SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#pages#private#meiocomunicacao#meiocomunicacaoEdit.xhtml:0"
+   NAME="item"
+   PATH="/pages/private/meiocomunicacao/meiocomunicacaoEdit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#pages#private#meiocomunicacao#meiocomunicacaoList.xhtml"
+    NAME="output"
+    PATH="/pages/private/meiocomunicacao/meiocomunicacaoList.xhtml"
+    TARGET="rules:#pages#private#meiocomunicacao#meiocomunicacaoList.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM
+  NAME="rules:#pages#private#meiocomunicacao#meiocomunicacaoList.xhtml"
+  PATH="/pages/private/meiocomunicacao/meiocomunicacaoList.xhtml"
+  SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#private#titulacao#titulacaoEdit.xhtml"
+  PATH="/pages/private/titulacao/titulacaoEdit.xhtml" SHAPE="32,241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM
+   ID="rules:#pages#private#titulacao#titulacaoEdit.xhtml:0" NAME="item"
+   PATH="/pages/private/titulacao/titulacaoEdit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#pages#private#titulacao#titulacaoList.xhtml"
+    NAME="output" PATH="/pages/private/titulacao/titulacaoList.xhtml"
+    TARGET="rules:#pages#private#titulacao#titulacaoList.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#private#titulacao#titulacaoList.xhtml"
+  PATH="/pages/private/titulacao/titulacaoList.xhtml"
+  SHAPE="240,257,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#private#telefone#telefoneEdit.xhtml"
+  PATH="/pages/private/telefone/telefoneEdit.xhtml" SHAPE="32,353,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#private#telefone#telefoneEdit.xhtml:0"
+   NAME="item" PATH="/pages/private/telefone/telefoneEdit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#pages#private#telefone#telefoneList.xhtml"
+    NAME="output" PATH="/pages/private/telefone/telefoneList.xhtml"
+    TARGET="rules:#pages#private#telefone#telefoneList.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#private#telefone#telefoneList.xhtml"
+  PATH="/pages/private/telefone/telefoneList.xhtml" SHAPE="240,369,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#private#endereco#enderecoEdit.xhtml"
+  PATH="/pages/private/endereco/enderecoEdit.xhtml" SHAPE="32,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#private#endereco#enderecoEdit.xhtml:0"
+   NAME="item" PATH="/pages/private/endereco/enderecoEdit.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="success::#pages#private#endereco#enderecoList.xhtml"
+    NAME="output" PATH="/pages/private/endereco/enderecoList.xhtml"
+    TARGET="rules:#pages#private#endereco#enderecoList.xhtml"
+    TITLE="success" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#private#endereco#enderecoList.xhtml"
+  PATH="/pages/private/endereco/enderecoList.xhtml" SHAPE="240,481,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

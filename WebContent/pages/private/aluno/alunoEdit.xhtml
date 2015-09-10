@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+
+	<ui:composition template="/pages/private/index.xhtml">
+		<ui:define name="conteudo">
+			<p:panelGrid columns="1" styleClass="width600px">
+				<h:inputHidden value="#{alunoEditMB.aluno.id}" />
+
+
+				<p:inputText placeholder="Nome" required="true" label="Nome"
+					value="#{alunoEditMB.aluno.nome}" styleClass="width500px"
+					maxlength="30" />
+
+				<p:inputText placeholder="CPF" required="true" label="CPF"
+					value="#{alunoEditMB.aluno.cpf}" styleClass="width500px"
+					maxlength="30" />
+
+
+
+				<p:selectOneMenu id="sexo" value="#{alunoEditMB.aluno.sexo}"
+					effect="fold" editable="true">
+					<f:selectItem itemLabel="Sexo" itemValue="" />
+					<f:selectItems value="#{professorEditMB.sexo}" var="c"
+						itemValue="#{c}" itemLabel="#{c}" />
+				</p:selectOneMenu>
+
+				<p:selectOneMenu id="tipo" value="#{alunoEditMB.aluno.tipopessoa}"
+					effect="fold" editable="true">
+
+					<f:selectItem itemLabel="Tipo Pessoa"
+						itemValue="professorEditMB.tipo" />
+					<f:selectItems value="#{professorEditMB.tipo}" var="c"
+						itemValue="#{c}" itemLabel="#{c}" />
+				</p:selectOneMenu>
+
+				<h:inputHidden value="#{alunoEditMB.aluno.endereco.id}" />
+				<p:inputText placeholder="Logradouro" required="true" label="Nome"
+					value="#{alunoEditMB.aluno.endereco.logradouro}"
+					styleClass="width500px" maxlength="100" />
+
+				<p:inputText placeholder="Bairro" required="true" label="Nome"
+					value="#{alunoEditMB.aluno.endereco.bairro}"
+					styleClass="width500px" maxlength="100" />
+
+				<p:inputText placeholder="Nª" required="true" label="Nome"
+					value="#{alunoEditMB.aluno.endereco.numero}"
+					styleClass="width500px" maxlength="100" />
+
+				<p:selectOneMenu id="cidade"
+					value="#{alunoEditMB.aluno.endereco.cidade}" effect="fold"
+					editable="true">
+					<f:selectItem itemLabel="Selecione uma cidade" itemValue="" />
+					<f:selectItems
+						value="#{alunoEditMB.aluno.endereco.cidades}" var="cidade"
+						itemValue="#{cidade}" itemLabel="#{cidade}" />
+				</p:selectOneMenu>
+
+			
+
+
+
+				<p:commandButton value="salvar" action="#{alunoEditMB.salvar()}"
+					ajax="false" />
+
+
+
+			</p:panelGrid>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+</html>

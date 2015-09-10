@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+
+	<ui:composition template="/pages/private/index.xhtml">
+		<ui:define name="conteudo">
+			<p:panelGrid columns="1" styleClass="width600px">
+				<h:inputHidden value="#{enderecoEditMB.endereco.id}" />
+
+				<p:inputText placeholder="Logradouro" required="true" label="Nome"
+					value="#{enderecoEditMB.endereco.logradouro}"
+					styleClass="width500px" maxlength="100" />
+
+				<p:inputText placeholder="Bairro" required="true" label="Nome"
+					value="#{enderecoEditMB.endereco.bairro}" styleClass="width500px"
+					maxlength="100" />
+
+				<p:inputText placeholder="Nª" required="true" label="Nome"
+					value="#{enderecoEditMB.endereco.numero}" styleClass="width500px"
+					maxlength="100" />
+
+				
+
+				<p:selectOneMenu id="cidade" value="#{enderecoEditMB.endereco.cidade}"
+					effect="fold" editable="true">
+					<f:selectItem itemLabel="Selecione uma cidade" itemValue="" />
+				<f:selectItems value="#{enderecoEditMB.cidades}" var="c" itemValue="#{c}" itemLabel="#{c}" />
+				</p:selectOneMenu>
+
+				<!--  <p:inputText placeholder="UF" required="true" label="Nome"
+					value="#{enderecoEditMB.endereco.uf}" styleClass="width500px"
+					maxlength="100">
+				</p:inputText>-->
+
+				<p:commandButton value="salvar" action="#{enderecoEditMB.salvar()}"
+					ajax="false" />
+			</p:panelGrid>
+		</ui:define>
+	</ui:composition>
+
+</h:body>
+</html>
